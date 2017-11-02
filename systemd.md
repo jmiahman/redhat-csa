@@ -1,6 +1,6 @@
 Systemd
 ======
-1. Install the httpd package.
+1. Install the httpd (apcahe) package.
 
        [root@localhost]# yum install httpd
 
@@ -20,7 +20,7 @@ Systemd
 
        [root@localhost]#  systemctl list-units --type=target | grep multi-user.target
        multi-user.target   loaded active active Multi-User System
-       root@localhost]# systemctl set-default multi-user.target
+       [root@localhost]# systemctl set-default multi-user.target
 
 6. View all available systemd configuration units.
 
@@ -37,21 +37,24 @@ Systemd
 or
 
        [root@localhost]# systemctl list-units --type=service
+       
 
 9. Determine if the httpd service is active.
 
        [root@localhost]# systemctl is-active httpd
+       
 
 10. Determine if the httpd service is enabled and, if it is not enabled, enable it
 
-       [root@localhost]# syhstemctl is-enabled httpd
+       `[root@localhost]# syhstemctl is-enabled httpd`
 
 11. View enabled and disabled settings for all units of the type "service".
 
-       [root@localhost]# systemctl --type=service --all
+       `[root@localhost]# systemctl --type=service --all`
+       
 or
-       [root@localhost]# systemctl list-units --type=service -all
+       `[root@localhost]# systemctl list-units --type=service -all`
 
 12. List all service unit configuration files regardless of whether they are active or not.
 
-       [root@localhost]# systemctl list-units --all
+       `[root@localhost]# systemctl list-units --all`
