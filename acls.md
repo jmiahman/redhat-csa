@@ -4,13 +4,11 @@
     while perofrming the lab. The starbuck user will be used to test
     setting the permissions.
     
-        ```
         [root@localhost ~]# useradd starbuck; passwd starbuck
         Changing password for user starbuck
         New password:
         Retype new password:
         passwd: all authentication tokens updated successfully.
-        ```
 
  2. Navigate into the /tmp directory and create two new directories named dir1 and dir2 and
     two files called file1 and file2
