@@ -33,7 +33,7 @@ Systemd
 8. List all active service unit configuration files.
 
        [root@localhost]# systemctl --type=service
-   
+
 or
 
        [root@localhost]# systemctl list-units --type=service
@@ -53,6 +53,7 @@ or
        `[root@localhost]# systemctl --type=service --all`
        
 or
+
        `[root@localhost]# systemctl list-units --type=service -all`
 
 12. List all service unit configuration files regardless of whether they are active or not.
