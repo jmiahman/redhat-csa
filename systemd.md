@@ -34,7 +34,7 @@ Systemd
 
        [root@localhost]# systemctl --type=service
 
-or
+      or
 
        [root@localhost]# systemctl list-units --type=service
        
@@ -44,17 +44,16 @@ or
        [root@localhost]# systemctl is-active httpd
        
 
-10. Determine if the httpd service is enabled and, if it is not enabled, enable it
-
+10. Determine if the httpd service is enabled and, if it is not enabled, enable it.
        `
        [root@localhost]# syhstemctl is-enabled httpd
-       `
+       `       `
 
 11. View enabled and disabled settings for all units of the type "service".
 
        `[root@localhost]# systemctl --type=service --all`
        
-or
+       or
 
        `[root@localhost]# systemctl list-units --type=service -all`
 
