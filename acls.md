@@ -3,6 +3,7 @@
     Ensure you're working as a priviledged user (sudo) or root user
     while perofrming the lab. The starbuck user will be used to test
     setting the permissions.
+    
         ```
         [root@localhost ~]# useradd starbuck; passwd starbuck
         Changing password for user starbuck
