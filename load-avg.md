@@ -35,7 +35,7 @@ Load Averages
    load is 100%. Below we are going to learn how to calculate this number.
 
        [root@localhost ~]# uptime
-        09:42:20 up 16:21,  3 users,  load average: 1.04, 0.72, 0.35
+       09:42:20 up 16:21,  3 users,  load average: 1.04, 0.72, 0.35
        Per CPU load average calculation formula: load average / # of cpu
        Per CPU load average calculation 1 Minute load average: 1.04 / 2 = 52%
        Per CPU load average calculation 5 Minute load average: .72 / 2 = 36%
