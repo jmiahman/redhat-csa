@@ -64,11 +64,11 @@ the current boot target?
 
 15) systemctl halt will shut down and halt the system.
 
-       True
+        True
 
-    or
+     or
 
-       False
+        False
 
 16) Which command(s) will move the system into the graphical.target?
 
@@ -82,8 +82,8 @@ the current boot target?
 19) What is the percentage load average for the following processor count and given load for the 5 minute
 load average? 
 
-      [root@localhost]# uptime 09:55:50 up 16:35, 3 users, load average: 4.05, 3.03, 3.75 
-      [root@localhost ~]# grep "model name" /proc/cpuinfo | wc -l 5
+        [root@localhost]# uptime 09:55:50 up 16:35, 3 users, load average: 4.05, 3.03, 3.75 
+        [root@localhost ~]# grep "model name" /proc/cpuinfo | wc -l 5
 
 20) Which command(s) will show all available targets on the system?
 
