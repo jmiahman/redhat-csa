@@ -21,6 +21,10 @@ Load Averages
    your number of CPUs will vary depending on your system and may not match the exact lab number.)
 
        [root@localhost]# grep "model name" /proc/cpuinfo | wc -l
+       
+      or
+      
+       [root@localhost]# grep -c ^processor /proc/cpuinfo
 
 4. Calculate the 1, 5, and 15 minute load averages for the system.
 
