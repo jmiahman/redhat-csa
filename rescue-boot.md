@@ -1,3 +1,6 @@
+Boot into Rescue Mode
+======
+
 1. Start or reboot a system to get to the boot menu.
 
 2. Press any key to stop the auto selection of a grub item.
@@ -8,8 +11,8 @@
 
 5. Append the new target to the linux16 kernel line.
 
-systemd.unit=rescue.target
+       systemd.unit=rescue.target
 
 6. Continue booting into the system.
 
-crtl +x
+       crtl +x
