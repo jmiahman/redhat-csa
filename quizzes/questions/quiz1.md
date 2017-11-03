@@ -18,27 +18,27 @@ higher priority items have been completed or only if they do not need the CPU?
 
 5) -20 is the most favorable for a given process.
 
-      True
+       True
 
    or
 
-      False
+       False
 
 6) The command "systemctl set-default" will set the default target for the system at boot time.
 
-      True
+       True
 
    or
 
-      False
+       False
 
 7) Only a privileged user can run a process with lower niceness.
 
-      True
+       True
 
    or
 
-      False
+       False
 
 8) Which command(s) will display available systemd unit types?
 
@@ -64,11 +64,11 @@ the current boot target?
 
 15) systemctl halt will shut down and halt the system.
 
-      True
+       True
 
-   or
+    or
 
-      False
+       False
 
 16) Which command(s) will move the system into the graphical.target?
 
