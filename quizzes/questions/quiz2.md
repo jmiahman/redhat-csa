@@ -3,11 +3,11 @@ Quiz 2
 
 1) Swap space can be created out of GPT, MBR and LVM based partitions/volumes.
 
-      True
+       True
 
-   or
+    or
 
-      False
+       False
 
 2) Which file system is best used with LVM volumes?
 
