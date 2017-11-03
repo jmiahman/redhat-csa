@@ -1,2 +1,2 @@
 # RedHat-CSA
-Red Hat related Certified Systems Administrators Labs and Quizzes from Linux Academy
+Red Hat related Certified System Administrator Labs and Quizzes
