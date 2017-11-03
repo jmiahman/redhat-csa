@@ -3,7 +3,7 @@ Running Top
 
 1. Start the top program.
 
-     [root@localhost]# top
+       [root@localhost]# top
 
 2. The top program shows all running processes on the system but sorts them. Using your keyboard, browse up and down to view the processes.
 
@@ -11,11 +11,11 @@ Running Top
 
 3. Sort all processes by memory percentage.
 
-     shift + m
+       shift + m
 
 4. Sort all processes by CPU usage.
 
-     shift + p
+       shift + p
 
 5. Renice the process for the script started at the beginning of the exercise. The command will be  "bash" displayed in the top program. Set the nice level to -20.
 
