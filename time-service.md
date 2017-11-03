@@ -1,3 +1,6 @@
+Time Settings and the Time Service
+======
+
 1. Login to the lab server and determine which timezone should be used based on your location.
 
        [root@localhost]# tzselect 
