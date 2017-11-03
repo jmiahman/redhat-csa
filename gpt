@@ -1,4 +1,4 @@
-1. Start a Red Hat 7 LinuxAcademy.com lab server and "mount" a new disk. Once completed, log into the system and navigate to the /dev directory.
+1. Start a Red Hat 7 lab server and "mount" a new disk. Once completed, log into the system and navigate to the /dev directory.
 
 [root@localhost]# cd /dev
 

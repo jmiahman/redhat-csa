@@ -1,4 +1,4 @@
-1. Start the LinuxAcademy.com lab server and mount a new disk and ensure LVM utilities are installed on the system.
+1. Start the lab server and mount a new disk and ensure LVM utilities are installed on the system.
 
 [root@localhost #] yum install lvm2
 

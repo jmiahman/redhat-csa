@@ -1,4 +1,4 @@
-1. Attach a LinuxAcademy.com external device (mount) to the lab server.
+1. Attach an external device (mount) to the lab server.
 
 2. Create two partitions 500M each on the device.
 
