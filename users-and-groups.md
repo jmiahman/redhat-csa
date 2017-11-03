@@ -87,8 +87,8 @@ and touch file1 then view permissions.
         -rw-rw-r--. 1 viper    Galactica  0 Apr 28 11:36 file1
         [viper@localhost galactica]$ 
 
-   You will notice that even though vipers current logged in/primary group is "viper", when the
-   file was created it was created with the permissions of the "parent" directory since the SGID bit was set. 
+    You will notice that even though vipers current logged in/primary group is "viper", when the
+    file was created it was created with the permissions of the "parent" directory since the SGID bit was set. 
 
 12. Modify the user apollo so that the user has authentication but cannot login to a shell terminal
 
