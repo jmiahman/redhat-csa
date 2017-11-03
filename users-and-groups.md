@@ -73,19 +73,19 @@ the group and has read/write/execute permissions on the directory.
 10. Apply special permission bits to the "galactica" folder so that, regardless of the user's 
 primary group, any directories or files created in the "galactica" folder are owned by the "galactica" group.
 
-       [root@localhost groups]# chmod g+s galactica/
+        [root@localhost groups]# chmod g+s galactica/
 
 11. Change the "viper" user password and login to the system as the viper user. 
 Notice viper's primary group is "viper". Navigate into the /home/groups/galactica directory 
 and touch file1 then view permissions.
 
-       [viper@localhost galactica]$ touch test1
-       [viper@localhost galactica]$ ls -al
-       total 0
-       drwxrwsr-x. 2 root     Galactica 29 Apr 28 11:36 .
-       drwxr-xr-x. 4 root     root      41 Apr 28 11:12 ..
-       -rw-rw-r--. 1 viper    Galactica  0 Apr 28 11:36 file1
-       [viper@localhost galactica]$ 
+        [viper@localhost galactica]$ touch test1
+        [viper@localhost galactica]$ ls -al
+        total 0
+        drwxrwsr-x. 2 root     Galactica 29 Apr 28 11:36 .
+        drwxr-xr-x. 4 root     root      41 Apr 28 11:12 ..
+        -rw-rw-r--. 1 viper    Galactica  0 Apr 28 11:36 file1
+        [viper@localhost galactica]$ 
 
    You will notice that even though vipers current logged in/primary group is "viper", when the
    file was created it was created with the permissions of the "parent" directory since the SGID bit was set. 
