@@ -20,9 +20,12 @@ Load Averages
    This is important in order to calculate the load average of the system. (Please note 
    your number of CPUs will vary depending on your system and may not match the exact lab number.)
 
-       [root@localhost]# grep "model name" /proc/cpuinfo | wc -l
+       [root@localhost]# grep ^processor /proc/cpuinfo | wc -l
        
       or
+      
+     To use just the grep command without piping (using "|") to wc -l you can use grep's "-c"
+     option:
       
        [root@localhost]# grep -c ^processor /proc/cpuinfo
 
