@@ -41,6 +41,26 @@ curl-7.29.0-42.el7_4.1.x86_64.rpm
 <p>Now that we have our folder created and we’re in it, let’s mv out RPM package to where we are.</p>
 <pre><code>[student@desktop curl]$ mv ../*.rpm .
 </code></pre>
-<p>Don’t miss the . (period) at the end of that command it’s our destination location which is out current working directory.</p>
+<p>Don’t miss the . (period) at the end of that command it’s our destination location which is our current working directory.</p>
 <p>Now let’s run our cpio2rpm command:</p>
+<pre><code>[student@desktop curl]$ rpm2cpio ./*.rpm | cpio -idmv
+</code></pre>
+<p>and we should all see something similar to:</p>
+<pre><code>[student@desktop curl]$ rpm2cpio ./*.rpm | cpio -idmv  
+./usr/bin/curl  
+./usr/share/doc/curl-7.29.0  
+./usr/share/doc/curl-7.29.0/BUGS  
+./usr/share/doc/curl-7.29.0/CHANGES  
+./usr/share/doc/curl-7.29.0/COPYING  
+./usr/share/doc/curl-7.29.0/FAQ  
+./usr/share/doc/curl-7.29.0/FEATURES  
+./usr/share/doc/curl-7.29.0/MANUAL  
+./usr/share/doc/curl-7.29.0/README  
+./usr/share/doc/curl-7.29.0/RESOURCES  
+./usr/share/doc/curl-7.29.0/TODO  
+./usr/share/doc/curl-7.29.0/TheArtOfHttpScripting  
+./usr/share/man/man1/curl.1.gz  
+1059 blocks  
+[student@desktop curl]$
+</code></pre>
 
