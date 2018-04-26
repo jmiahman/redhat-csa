@@ -1,7 +1,7 @@
 
 <h2 id="intro---archives-are-not-just-tar">Intro - Archives are not just tar</h2>
 <p>Along with tar there are other types of archives on a RHEL system. Most administrators and users may not realize that a RPM file is actually a archive as well.</p>
-<p>An RPM package is simply a header structure on top of a CPIO archive. The package itself is comprised of four sections: a header with a leading identifier (magic number) that identifies the file as an RPM package, a signature to verify the integrity of the package, the header or ‘tagged’ data containing package information, version numbers, and copyright messaging, and the archive containing the actual program files.</p>
+<p>An RPM package is simply header information on top of a CPIO archive. The package itself contains four sections: a header with a leading identifier (magic number) that identifies the file as an RPM package, a signature to verify the integrity of the package, the header or ‘tagged’ data containing package information, version numbers, copyright messaging, and the archive containing the actual program files.</p>
 <h2 id="exercise-description">Exercise Description</h2>
 <p>In this exercise we will be examining a RPM with the usage of the rpm2cpio. The program rpm2cpio provided by the rpm package, extracts the cpio archive from the rpm package itself and allows us to view and even modify it’s contents.</p>
 <h2 id="practicum">Practicum</h2>
