@@ -28,4 +28,19 @@ Specifies an alternate directory to store packages.
 </code></pre>
 <p>So instead of us having to navigate to the above folder and maybe do some searching if we can’t remember the exact location, we tell yum to just place the RPM package in our present working directory. That is why we use $(pwd) that tells the --downloaddir= option to use the output of the pwd to place our RPM package in the present working directory, in this case the users home directory.</p>
 <p>Great! If you have ran the command successfully you should now have the curl RPM package in your users home directory. Do a:</p>
+<pre><code>[student@desktop ~]$ ls *.rpm
+</code></pre>
+<p>and it should look close to (versions might be different):</p>
+<pre><code>[student@desktop ~]$ ls *.rpm
+curl-7.29.0-42.el7_4.1.x86_64.rpm
+</code></pre>
+<p>Let’s now create a folder to work in and keep things around here tidy:</p>
+<pre><code>[student@desktop ~]$ mkdir curl  
+[student@desktop ~]$ cd curl
+</code></pre>
+<p>Now that we have our folder created and we’re in it, let’s mv out RPM package to where we are.</p>
+<pre><code>[student@desktop curl]$ mv ../*.rpm .
+</code></pre>
+<p>Don’t miss the . (period) at the end of that command it’s our destination location which is out current working directory.</p>
+<p>Now let’s run our cpio2rpm command:</p>
 
