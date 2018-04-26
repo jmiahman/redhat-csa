@@ -1,7 +1,3 @@
----
-
-
----
 
 <h2 id="intro---archives-are-not-just-tar">Intro - Archives are not just tar</h2>
 <p>Along with tar there are other types of archives on a RHEL system. Most administrators and users may not realize that a RPM file is actually a Archive as well.</p>
