@@ -16,6 +16,7 @@ Specifies an alternate directory to store packages.
 <p>For this exercise we are going to use the curl package as it has a minimal amount of files, but still gives a fairly decent example of what’s in an RPM package. We are now going to download this package running these commands (notice I am in my home folder):</p>
 <pre><code>[student@desktop ~]$ sudo yum install --downloadonly --downloaddir=$(pwd) curl
 </code></pre>
+<p>Note: If yum returns that the RPM package is already installed, replace the "install" option with "reinstall" in the above command</p>
 <p>Here’s the command explanation. By now hopefully you know what “sudo yum install” does. If not it is rather self explanatory. We are elevating our privileges to run the yum command using sudo and then calling install because we want it to install a package, but do we? No. We don’t want the package to install, we want to just download the package. So we tell yum that, after we say install, by using the “–downloadonly” option. Why then do we need to use the option “–downloaddir=$(pwd)” you ask? Great question! By default yum will download packages to a cache directory located in:</p>
 <pre><code>"/var/cache/yum/"
 </code></pre>
