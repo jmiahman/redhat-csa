@@ -8,10 +8,10 @@ To see the list of files and directories
 
 ls Options | Explanation
 ---- | ----
--l | Long list including attributes
--a | All files and directories including hidden
--d | For a particular file or directory
--R | Recursive to see the tree structure
+```-l``` | Long list including attributes
+```-a``` | All files and directories including hidden
+```-d``` | For a particular file or directory
+```-R``` | Recursive to see the tree structure
 
 ### Creation of files
 
@@ -85,10 +85,10 @@ To copy a file or directory
 
 cp Options | Explanation
 ---- | ----
--r | Recursive (to copy the directory along with its contents)
--v | Verbose
--p | Copy with permissions
--b | make a backup of each existing destination marking the end of the file name with ~
+```-r``` | Recursive (to copy the directory along with its contents)
+```-v``` | Verbose
+```-p``` | Copy with permissions
+```-b``` | make a backup of each existing destination marking the end of the file name with ~
 
 #### Moving and Renaming   
 To move a file or directory to a different location   
@@ -134,11 +134,11 @@ To get character, word, and line count of a text file
 
 wc Options | Explanation     
 ---- | ----
--l | Prints the number of lines in a file.
--w | Prints the number of words in a file.
--c | Displays the count of bytes in a file.
--m | Prints the count of characters from a file.
--L | Prints only the length of the longest line in a file.
+```-l``` | Prints the number of lines in a file.
+```-w``` | Prints the number of words in a file.
+```-c``` | Displays the count of bytes in a file.
+```-m``` | Prints the count of characters from a file.
+```-L``` | Prints only the length of the longest line in a file.
 
 
 #### VI editor modes
@@ -149,30 +149,30 @@ VI editor has three modes of operations
 
 Insert Mode | Explanation  
 ---- | ----
-I | Insert the text at the current cursor position.
-l | Insert the text in beginning of a line
-a | Adds the text after the current cursor position
-A | Adds the text at the end of a line
-o | Insert the text one line below current cursor position
-O | Insert the text one line above current cursor position
+```I``` | Insert the text at the current cursor position.
+```l``` | Insert the text in beginning of a line
+```a``` | Adds the text after the current cursor position
+```A``` | Adds the text at the end of a line
+```o``` | Insert the text one line below current cursor position
+```O``` | Insert the text one line above current cursor position
 
 Ex mode | Explanation  
 ---- | ----
-:q | Quit without saving
-:q! | Quit forcefully without saving
-:w | Write (save)
-:wq | Save and quit
-:wq! | Save and quit forcefully
-:se nu | sets line numbers
-:se nonu | Remove line numbers
-:84 | The cursor goes to line 84
+```:q``` | Quit without saving
+```:q!``` | Quit forcefully without saving
+```:w``` | Write (save)
+```:wq``` | Save and quit
+```:wq!``` | Save and quit forcefully
+```:se nu``` | sets line numbers
+```:se nonu``` | Remove line numbers
+```:84``` | The cursor goes to line 84
 
 Command Mode | Explanation  
 ---- | ----
-dd | Deletes a line
-ndd (ex. 5dd) | Deletes ‘n’ lines
-yy | Copies a line
-nyy (ex. 5yy)| Copies ‘n’ lines
-p | Put (pastes the deleted or copied text)
-u | Undo(you can undo 1000 times)
-G | Moves the cursor to the last line of the file
+```dd``` | Deletes a line
+```ndd``` (ex. 5dd) | Deletes ‘n’ lines
+```yy``` | Copies a line
+```nyy``` (ex. 5yy)| Copies ‘n’ lines
+```p``` | Put (pastes the deleted or copied text)
+```u``` | Undo(you can undo 1000 times)
+```G``` | Moves the cursor to the last line of the file
