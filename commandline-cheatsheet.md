@@ -17,7 +17,7 @@ This slight difference can help remind you what privileges you currently have. A
 
 The one constant in this case is the hostname or machine name in the shell prompt. In the above examples this is represented by "@localhost.localdomain". Pay attention to this portion of the prompt when working with ssh (remoting) as it may alleviate any confusion of the machine a command will be entered and ran on.
 
-The second instance of the user name (ex. ...root]# or student]$) is actually representing the current directory the shell prompt is in. In that case of root it's current working directory would be the root home directory located in ```/root``` and in the case of the student user it's current working directory would be located in the default location for all users (except root) in the ```/home``` directory under it's own perspective directory ```/home/student```. You can also check the current working directory by use the ```pwd``` command.
+The second instance of the user name (ex. ...root]# or ...student]$) is actually representing the current directory the shell prompt is in. In that case of root it's current working directory would be the root home directory located in ```/root``` and in the case of the student user it's current working directory would be located in the default location for all users (except root) in the ```/home``` directory under it's own perspective directory ```/home/student```. You can also check the current working directory by use the ```pwd``` command.
 
 #### Print Working Directory  
 Print the name of the current working directory  
