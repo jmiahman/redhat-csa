@@ -1,3 +1,24 @@
+#### Shell Prompt Explanation
+Entering or running a command refers to typing a given command and pressing [Enter]. To close a terminal window, either click on the [X] in the upper right corner of the screen or enter the exit command at the shell prompt.   
+
+The shell prompt within a terminal window looks something like this:
+
+```[student@localhost.localdomain student]$```  
+
+There are any number of symbols that can be used to indicate the end of the shell prompt, and you can customize what your prompt looks like. However, there are two symbols that you will see more often than any others, "$" and "#". The first symbol, "$", is the last character in the prompt when you are logged in as a normal user. The shell prompt for a normal user looks something like this:
+
+```[student@localhost.localdomain student]$```
+
+The second symbol, "#", is the last character in the prompt when you are logged in as root. This is true whether you logged in as root from the initial screen or if you executed the ```su -``` or ```sudo -i``` commands to become root. The shell prompt for root looks something like this:
+
+```[root@localhost.localdomain root]#```  
+
+This slight difference can help remind you what privileges you currently have. Also take note the usernames have changed as well.
+
+The one constant in this case is the hostname or machine name in the shell prompt. In the above examples this is represented by "@localhost.localdomain". Pay attention to this portion of the prompt when working with ssh (remoting) as it may alleviate any confusion of the machine a command will be entered and ran on.
+
+The second instance of the user name (ex. ...root]# or student]$) is actually representing the current directory the shell prompt is in. In that case of root it's current working directory would be the root home directory located in ```/root``` and in the case of the student user it's current working directory would be located in the default location for all users (except root) in the ```/home``` directory under it's own perspective directory ```/home/student```. You can also check the current working directory by use the ```pwd``` command.
+
 #### Print Working Directory  
 Print the name of the current working directory  
 ```[student@korora~]$ pwd```
